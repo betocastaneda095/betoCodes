@@ -2,6 +2,17 @@ body {
     margin:0px;
     padding:0px;
     background-color:#181e28;
+    color:antiquewhite;
+}
+
+ .hero-title {
+    font-size: 54px;
+    color:rgb(245, 158, 11);
+}
+
+h2 {
+    color:rgb(82, 223, 255);
+    color:rgb(0, 228, 121);
 }
 
 .header {
@@ -18,23 +29,31 @@ body {
     
 }
 
+.blue {
+    color:rgb(82, 223, 255);
+}
+
+.green {
+    color:rgb(0, 228, 121);
+}
+
 
 /*--------------- SIDE-BAR ASSETS ---------*/
 
 
 .side-bar {
-    flex:0;
-
+    
+    flex-basis:220px;
     background-color:#181e28;
     display:flex;
     flex-direction:column;
 }
 
 .menu {
-    flex:0;
+    
     background-color:#2f3847;
     width:200px;
-
+    position:fixed;
     margin:8px;
     color:aliceblue;
     font-size:12px;
@@ -82,6 +101,10 @@ section {
 .hero {
     display:flex;
     align-items:center;
+    flex-basis:auto;
+    flex-shrink:1;
+    height:300px;
+
 }
 
 .hero .text {
