@@ -5,9 +5,13 @@ body {
     color:antiquewhite;
 }
 
+
+
  .hero-title {
-    font-size: 54px;
+    font-size: 120px;
     color:rgb(245, 158, 11);
+    flex-shrink:1;
+
 }
 
 h2 {
@@ -15,16 +19,29 @@ h2 {
     color:rgb(0, 228, 121);
 }
 
+.hero img {
+    flex-basis:auto;
+    height: 250px;
+    border-radius: 10px;
+    margin-right:50px;
+ 
+    box-shadow: -5px 5px 5px rgba(0, 228, 121, 0.5); 
+}
 .header {
     display:flex;
-    background-color:#0D1117;
+    background-color:#0d11177c;
+    position:sticky;
+    top: -1px;
 }
+
+
 .header img {
     height: 72px;
 }
 
 .content {
     display:flex;
+    flex-direction:column;
 
     
 }
@@ -41,22 +58,18 @@ h2 {
 /*--------------- SIDE-BAR ASSETS ---------*/
 
 
-.side-bar {
-    
-    flex-basis:220px;
-    background-color:#181e28;
-    display:flex;
-    flex-direction:column;
-}
 
-.menu {
-    
-    background-color:#2f3847;
-    width:200px;
-    position:fixed;
-    margin:8px;
+
+.header .menu {
+    display:flex;
+    justify-content:flex-end;
+    padding-right:100px;
+    flex-basis:80%;
     color:aliceblue;
     font-size:12px;
+    flex-shrink:1;
+ 
+
 }
 
 ul,a {
@@ -66,13 +79,28 @@ ul,a {
     line-height:1.5em;
 }
 
-/*-------TARTS WITH THE MAIN STYLING----*/
+.menu ul {
+    display:flex;
+    gap: 80px;
+    justify-content: space-around;
+}
+
+.menu svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
+    vertical-align: middle;
+    fill: white;
+    color: white;
+}
+
+/*-------STARTS WITH THE MAIN STYLING----*/
 
 
 main {
     flex:1;
-    margin-left: 8px;
-    padding-left: 8px;
+    margin-left: 0px;
+    padding-left: 0px;
     margin-right:0;
 
     display:flex;
@@ -83,8 +111,8 @@ main {
 
 section {
     flex:0;
-    margin: 16px;
-    padding: 8px;
+    margin: 0px;
+    padding: 0px;
     background-color:#2f3847;
    
 }
@@ -103,10 +131,13 @@ section {
     align-items:center;
     flex-basis:auto;
     flex-shrink:1;
-    height:300px;
+    height: 800px;
+    justify-content:center;
+    gap:100px;
 
 }
 
 .hero .text {
-    
+    padding-left: 50px;
+    flex-shrink:1;
 }
